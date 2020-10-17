@@ -1,0 +1,32 @@
+
+body, html{padding:0!important;margin:0!important;width:100%;height:100%;overflow:hidden;}
+a{cursor:pointer;color:#e06711}
+a.hover{text-shadow:0px 0px 5px #e06711;}
+/*
+    bg/light color -        #f7f7ed
+    dark/tect color         #404144
+    orange/highlight color- #e06711
+    alternate light -       #efefef
+    alternate dark -        #726d67
+*/
+body{font-family:'Roboto', sans-serif;font-size:16px;font-weight:400;color:404144;}
+.head-text{font-family:'Comfortaa', sans-serif;}
+.page-wide{
+    width:12
+}
+#FullWrap{
+    background:#f7f7ed;
+    width:100%;
+    height:100%;
+    position:relative;
+}
+#NavWrap{
+    position:fixed;
+    top:0px;
+    right:0px;
+}
+.nav-link{
+    display:block;
+    text-align:right;
+    font-size:1.3em;
+}
