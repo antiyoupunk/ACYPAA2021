@@ -30,3 +30,50 @@ body{font-family:'Roboto', sans-serif;font-size:16px;font-weight:400;color:40414
     text-align:right;
     font-size:1.3em;
 }
+#NavToggle i{
+    height:1em;
+    width:1em;
+    display:inline-block;
+}
+#NavInner{
+    position:relative;
+    
+}
+#PrimaryNav{
+    position:absolute;
+    width:11em;
+    top:3.5em;
+    right:-15em;
+    padding:.5em;
+    padding-right:2em;
+    box-shadow:1px 2px 5px #726d67;
+    border-radius: 4px;
+    transition:right .4s ease-out;
+}
+#PrimaryNav.show-nav{
+    right:-1em;
+}
+.rotate-out{
+    animation-name: rotateOut;
+    animation-duration:.5s;
+    animation-direction:forwards;
+    animation-fill-mode:forwards;
+}
+.rotate-in{
+    animation-name: rotateIn;
+    animation-duration:.5s;
+    animation-direction:forwards;
+    animation-fill-mode:forwards;
+}
+@keyframes rotateOut {
+    0%   {opacity: 1;transform: rotate(0deg)}
+    25%  {opacity: .8;transform:rotate(40deg)}
+    50%  {opacity: .5;transform:rotate(70deg)}
+    100% {opacity: 0;transform:rotate(90deg)}
+}
+@keyframes rotateIn {
+    0%   {opacity: 0;transform: rotate(90deg)}
+    25%  {opacity: .1;transform:rotate(130deg)}
+    50%  {opacity: .5;transform:rotate(160deg)}
+    100% {opacity: 1;transform:rotate(180deg)}
+}
