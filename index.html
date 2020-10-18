@@ -9,20 +9,20 @@
     <link rel="stylesheet" href="inc/style.css">
     <script src="https://kit.fontawesome.com/cdc454f71b.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body style="background-position-y:80px;">
     <div id="FullWrap">
         <div id="NavWrap">
             <div class="page-wide" id="NavInner">
-                <a id="NavToggle" onclick="navToggle();" class="mobile-only" style="padding:.12em;width:1em;height:1em;float:right;font-size:2.5em;position:relative;"><i class="fa fa-minus-circle is-plus"></i><i class="fa fa-plus-circle"></i></a>
+                <a id="NavToggle" onclick="navToggle();" class="mobile-only" style="float:right;position:relative;"><i class="fa fa-minus-circle is-plus"></i><i class="fa fa-plus-circle"></i></a>
                 <nav id="PrimaryNav">
                     <div>
-                        <a class="nav-link">Register</a>
-                        <a class="nav-link">Hotel</a>
-                        <a class="nav-link">Merchandise</a>
-                        <a class="nav-link">Events</a>
-                        <a class="nav-link">Busienss Meeting</a>
-                        <a class="nav-link">Schedule</a>
-                        <a class="nav-link">Contact</a>
+                        <a class="nav-link" onclick="scrollToContent('RegisterContent');return 0;">Register</a>
+                        <a class="nav-link" onclick="scrollToContent('HotelContent');return 0;">Hotel</a>
+                        <a class="nav-link" onclick="scrollToContent('MerchandiseContent');return 0;">Merchandise</a>
+                        <a class="nav-link" onclick="scrollToContent('EventsContent');return 0;">Events</a>
+                        <a class="nav-link" onclick="scrollToContent('BusinessMeetingContent');return 0;">Busienss Meeting</a>
+                        <a class="nav-link" onclick="scrollToContent('ScheduleContent');return 0;">Schedule</a>
+                        <a class="nav-link last-link" onclick="scrollToContent('ContactContent');return 0;">Contact</a>
                     </div>
                 </nav>
             </div>

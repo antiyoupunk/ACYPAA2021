@@ -1,23 +1,27 @@
 
-body, html{padding:0!important;margin:0!important;width:100%;height:100%;overflow-x:hidden;}
+body, html{padding:0!important;margin:0!important;width:100%;overflow-x:hidden;}
 *{box-sizing:border-box;}
 a{cursor:pointer;color:#e06711}
 a.hover{text-shadow:0px 0px 5px #e06711;}
 /*
     bg/light color -        #f7f7ed
-    dark/tect color         #404144
+    dark color  -           #404144
     orange/highlight color- #e06711
     alternate light -       #efefef
-    alternate dark -        #726d67
+    alternate dark / text - #726d67
 */
 body{
     font-family:'Roboto', sans-serif;
     font-size:16px;
     font-weight:400;
-    color:404144;
+    color:#726d67;
     background:#f7f7ed;
     background-image:url("../img/aa-bg.png");
-    background-repeat:none;
+    background-attachment: fixed;
+    background-position-x: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition:background-position-y .1s;
 }
 .head-text, h1, h2{font-family:'Comfortaa', sans-serif;}
 .page-wide{
@@ -64,6 +68,7 @@ body{
     position:fixed;
     top:.5em;
     right:0px;
+    z-index:9999;
 }
 #FootWrap{
     background:#726d67;
@@ -76,12 +81,21 @@ body{
     text-align:right;
     font-size:1.3em;
 }
+#NavToggle{
+    height:1.1em;
+    width:1.1em;
+    padding:.1em;
+    font-size:2.5em;
+    border-radius:2em;
+    background:#f7f7ed;
+    box-shadow:0px 0px 3px #726d67;
+}
 #NavToggle i{
     height:1em;
     width:1em;
     position:absolute;
-    top:0px;
-    right:0px;
+    top:.05em;
+    right:.05em;
     display:inline-block;
 }
 #NavInner{
@@ -90,7 +104,7 @@ body{
 }
 #PrimaryNav{
     position:absolute;
-    width:11em;
+    width:14em;
     top:3.5em;
     right:-15em;
     padding:.5em;
@@ -99,6 +113,13 @@ body{
     border-radius: 4px;
     transition:right .4s ease-out;
     background:#efefef;
+}
+#PrimaryNav .nav-link{
+    padding:.5em 0;
+    border-bottom:1px solid #f7f7ed;
+}
+#PrimaryNav .nav-link.last-link{
+    border-bottom:none;
 }
 #PrimaryNav.show-nav{
     right:-1em;
